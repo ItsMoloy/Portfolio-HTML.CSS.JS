@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Moloy Banerjee</title>
+    <meta name="title" content="Moloy Banerjee - Full Stack Developer | React, Node.js & JavaScript Expert">
+    <meta name="description" content="Experienced Full Stack Developer specializing in React, Node.js, and modern web technologies.">
+    <meta name="keywords" content="full stack developer, react developer, node.js, javascript, web development, frontend ">
+    <meta name="author" content="Moloy Banerjee">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://johndoe-portfolio.com/">
+    <meta property="og:title" content="John Doe - Full Stack Developer | React, Node.js & JavaScript Expert">
+    <meta property="og:description" content="Experienced Full Stack Developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and full-time opportunities.">
+    <meta property="og:image" content="https://johndoe-portfolio.com/assets/images/profile-hero.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="John Doe Portfolio">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://johndoe-portfolio.com/">
+    <meta property="twitter:title" content="John Doe - Full Stack Developer | React, Node.js & JavaScript Expert">
+    <meta property="twitter:description" content="Experienced Full Stack Developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and full-time opportunities.">
+    <meta property="twitter:image" content="https://johndoe-portfolio.com/assets/images/profile-hero.jpg">
+    <meta property="twitter:creator" content="@johndoe">
+    <meta property="twitter:site" content="@johndoe">
+
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://johndoe-portfolio.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "John Doe",
+      "jobTitle": "Full Stack Developer",
+      "description": "Experienced Full Stack Developer specializing in React, Node.js, and modern web technologies.",
+      "url": "https://johndoe-portfolio.com",
+      "image": "/assets/short.jpeg",
+      "email": "john.doe@email.com",
+      "telephone": "+1-555-123-4567",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://linkedin.com/in/johndoe",
+        "https://github.com/johndoe",
+        "https://twitter.com/johndoe"
+      ],
+      "knowsAbout": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "HTML5",
+        "CSS3",
+        "MongoDB",
+        "Full Stack Development",
+        "Web Development",
+        "UI/UX Design"
+      ],
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Stanford University",
+          "description": "Master of Computer Science"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "University of California, Berkeley",
+          "description": "Bachelor of Computer Science"
+        }
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Tech Solutions Inc.",
+        "description": "Senior Full Stack Developer"
+      }
+    }
+    </script>
+
+    <!-- Website Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "John Doe Portfolio",
+      "description": "Professional portfolio of John Doe, Full Stack Developer",
+      "url": "https://johndoe-portfolio.com",
+      "author": {
+        "@type": "Person",
+        "name": "John Doe"
+      },
+      "inLanguage": "en-US",
+      "copyrightYear": "2024",
+      "genre": "Portfolio"
+    }
+    </script>
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#work" class="nav-link">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" role="main">
+        <!-- Home Section -->
+        <section id="home" class="home" role="banner">
+            <div class="home-container">
+                <div class="home-content">
+                    <h1 class="home-title">Hi, I'm <span class="highlight">Moloy Banerjee</span></h1>
+                    <h2 class="home-subtitle">I'm a <span class="typing-text" aria-live="polite" aria-atomic="true"></span></h2>
+                    <p class="home-description">
+                      I am a student of Software Engineering with a passion for problem solving, web development and have a keen interest in learning new technologies. I have mastered JavaScript, React, Node.js, and modern web development practices.
+                    </p>
+                    <a href="#contact" class="cta-button" aria-describedby="cta-description">Get In Touch</a>
+                    <span id="cta-description" class="sr-only">Navigate to contact section to send a message</span>
+                </div>
+                <div class="home-image">
+                    <img src="assets/short.jpeg" alt="Moloy Banerjee, Student of Software Engineering " class="profile-img" loading="eager">
+                </div>
+            </div>
+            <div class="scroll-indicator" aria-label="Scroll down to learn more">
+                <a href="#about" aria-label="Scroll down to About section">
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section" role="region" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="assets/tail.jpeg" alt="Moloy Banerjee in a professional setting, smiling" class="about-img" loading="lazy">
+                    </div>
+                    <div class="about-text">
+                        <h3>Web Developer & UI/UX Designer</h3>
+                        <p>
+                          I am a passionate and dedicated web developer with over 1 year of hands-on experience in building dynamic and user-friendly digital solutions. Currently, I am a student continuously learning and expanding my skill set while actively working on a variety of academic and personal projects. My journey in web development has given me a strong foundation in JavaScript and its powerful ecosystem.
+                        </p>
+                        <p>
+                         My goal is to leverage my growing expertise to contribute to real-world projects and create impactful digital experiences that make a difference.
+                        </p>
+                        <dl class="about-info" aria-label="Personal information">
+                            <div class="info-item">
+                                <dt class="info-label">Name:</dt>
+                                <dd class="info-value">Moloy Banerjee</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="info-label">Email:</dt>
+                                <dd class="info-value">moloyswe20@gmail.com</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="info-label">Location:</dt>
+                                <dd class="info-value">Sylhet, Bangladesh</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt class="info-label">Graduated:</dt>
+                                <dd class="info-value">Not Yet</dd>
+                            </div>
+                        </dl>
+                        <a href="https://itsmoloy.github.io/CV/" class="btn-download" download aria-describedby="cv-description">
+                            <i class="fas fa-download" aria-hidden="true"></i> Download CV
+                        </a>
+                        <span id="cv-description" class="sr-only">Download John Doe's resume as PDF file</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section" role="region" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading" class="section-title">My Skills</h2>
+                <div class="skills-content">
+                    <div class="skills-list" role="list" aria-label="Technical skills with proficiency levels">
+                        <div class="skill-item" role="listitem">
+                            <div class="skill-header">
+                                <i class="fab fa-html5" aria-hidden="true"></i>
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-percentage" aria-label="95 percent proficiency">95%</span>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 skill level">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" role="listitem">
+                            <div class="skill-header">
+                                <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-percentage" aria-label="90 percent proficiency">90%</span>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 skill level">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" role="listitem">
+                            <div class="skill-header">
+                                <i class="fab fa-js-square" aria-hidden="true"></i>
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage" aria-label="88 percent proficiency">88%</span>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript skill level">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" role="listitem">
+                            <div class="skill-header">
+                                <i class="fab fa-react" aria-hidden="true"></i>
+                                <span class="skill-name">React</span>
+                                <span class="skill-percentage" aria-label="85 percent proficiency">85%</span>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="React skill level">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" role="listitem">
+                            <div class="skill-header">
+                                <i class="fab fa-node-js" aria-hidden="true"></i>
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-percentage" aria-label="80 percent proficiency">80%</span>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Node.js skill level">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" role="listitem">
+                            <div class="skill-header">
+                                <i class="fab fa-node-js" aria-hidden="true"></i>
+                                <span class="skill-name">C Programming</span>
+                                <span class="skill-percentage" aria-label="80 percent proficiency">95%</span>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="C Programming skill level">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+
+                          <div class="skill-item" role="listitem">
+                            <div class="skill-header">
+                                <i class="fab fa-node-js" aria-hidden="true"></i>
+                                <span class="skill-name">C++</span>
+                                <span class="skill-percentage" aria-label="80 percent proficiency">95%</span>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="C++ skill level">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+
+                          <div class="skill-item" role="listitem">
+                            <div class="skill-header">
+                                <i class="fab fa-node-js" aria-hidden="true"></i>
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percentage" aria-label="80 percent proficiency">80%</span>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Node.js skill level">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+
+                          <div class="skill-item" role="listitem">
+                            <div class="skill-header">
+                                <i class="fab fa-node-js" aria-hidden="true"></i>
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage" aria-label="80 percent proficiency">70%</span>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Node.js skill level">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" role="listitem">
+                            <div class="skill-header">
+                                <i class="fas fa-database" aria-hidden="true"></i>
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-percentage" aria-label="75 percent proficiency">75%</span>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="MongoDB skill level">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Science in Software Engineering</h3>
+                            <h4>Shahjalal University of Science and Technology</h4>
+                            <span class="timeline-date">2022 - Soon</span>
+                            <p>Want to specialize in Software Engineering and Web Technologies. Graduated with honors.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Studied Science</h3>
+                            <h4>Notre Dame College, Dhaka</h4>
+                            <span class="timeline-date">2018-2020</span>
+                            <p>Foundation in science fundamentals, mathematics, and computer science.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>School Life </h3>
+                            <h4>Govt. Jubilee High School, Sunamganj</h4>
+                            <span class="timeline-date">2011-2018</span>
+                            <p>A journey of learning and growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="work section" role="region" aria-labelledby="work-heading">
+            <div class="container">
+                <h2 id="work-heading" class="section-title">My Work</h2>
+                <div class="work-filter" role="tablist" aria-label="Filter projects by category">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" aria-controls="work-grid">All</button>
+                    <button class="filter-btn" data-filter="web" role="tab" aria-selected="false" aria-controls="work-grid">Web Apps</button>
+                    <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false" aria-controls="work-grid">Mobile</button>
+                    <button class="filter-btn" data-filter="design" role="tab" aria-selected="false" aria-controls="work-grid">Design</button>
+                </div>
+                <div class="work-grid" id="work-grid" role="tabpanel" aria-label="Project portfolio">
+                    <article class="work-item" data-category="web">
+                        <div class="work-image">
+                            <img src="assets/Ebookstore.avif" alt="E-Book Store Website screenshot showing modern online shopping interface" loading="lazy">
+                            <div class="work-overlay">
+                                <div class="work-info">
+                                    <h3>E-Book Store Website</h3>
+                                    <p>Full-stack e-book store with React, Redux Toolkit, and Node.js</p>
+                                    <div class="work-links">
+                                        <a href="#" class="work-link" aria-label="View E-Book Store Website live demo">
+                                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" class="work-link" aria-label="View E-Book Store Website source code on GitHub">
+                                            <i class="fab fa-github" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <div class="work-item" data-category="mobile">
+                        <div class="work-image">
+                            <img src="assets/DoctorAS.webp" alt="Doctor Appointment App - Productivity mobile application">
+                            <div class="work-overlay">
+                                <div class="work-info">
+                                    <h3>Doctor Appointment App</h3>
+                                    <p>React Native mobile application for booking doctor appointments</p>
+                                    <div class="work-links">
+                                        <a href="#" class="work-link"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="work-link"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work-item" data-category="web">
+                        <div class="work-image">
+                            <img src="assets/HospitalAppointment.jpg" alt="Hospital Appointment Website - Healthcare web application">
+                            <div class="work-overlay">
+                                <div class="work-info">
+                                    <h3>Hospital Appointment Website</h3>
+                                    <p>Web application for booking hospital appointments</p>
+                                    <div class="work-links">
+                                        <a href="#" class="work-link"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="work-link"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work-item" data-category="design">
+                        <div class="work-image">
+                            <img src="assets/Portfolioo.jpeg" alt="Portfolio Website - Modern portfolio website">
+                            <div class="work-overlay">
+                                <div class="work-info">
+                                    <h3>Portfolio Website</h3>
+                                    <p>Modern portfolio website with a clean design in HTML CSS JavaScript and JQuery with responsive layout</p>
+                                    <div class="work-links">
+                                        <a href="#" class="work-link"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="work-link"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work-item" data-category="mobile">
+                        <div class="work-image">
+                            <img src="assets/Food.jpg" alt="Food Delivery Website - Online food ordering platform">
+                            <div class="work-overlay">
+                                <div class="work-info">
+                                    <h3>Food Delivery App</h3>
+                                    <p>Online food ordering platform built with Dart</p>
+                                    <div class="work-links">
+                                        <a href="#" class="work-link"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="work-link"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work-item" data-category="web">
+                        <div class="work-image">
+                            <img src="assets/ToDo.png" alt="ToDo App - Task management application">
+                            <div class="work-overlay">
+                                <div class="work-info">
+                                    <h3>ToDo App</h3>
+                                    <p>Task management application with real-time collaboration</p>
+                                    <div class="work-links">
+                                        <a href="#" class="work-link"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="work-link"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="experience-timeline">
+                    <div class="experience-item">
+                        <div class="experience-dot"></div>
+                        <div class="experience-content">
+                            <h3>First Year -2022</h3>
+                            <h4>Basic C,C++ Language</h4>
+                            <span class="experience-date">1 Year</span>
+                            <ul class="experience-duties">
+                                <li>Learnt C and C++ programming languages</li>
+                                <li>Started Problem Solving with brainstorming mentality</li>
+                                <li>Built Snake Game using C++</li>
+                                <li>Using Github for version control</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-dot"></div>
+                        <div class="experience-content">
+                            <h3>Second Year -2023</h3>
+                            <h4>Data Structure and Object Oriented Programming in Java,Figma</h4>
+                            <span class="experience-date">1 Year</span>
+                            <ul class="experience-duties">
+                                <li>Learnt Data Structures and Algorithms</li>
+                                <li>Started Learning Object Oriented Programming in Java</li>
+                                <li>Food Ordering App using Dart(First Tried with Java)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-dot"></div>
+                        <div class="experience-content">
+                            <h3>Third Year -2024</h3>
+                            <h4>Web Development and Design</h4>
+                            <span class="experience-date">1 Year</span>
+                            <ul class="experience-duties">
+                                <li>Built interactive user interfaces using HTML, CSS, and JavaScript</li>
+                                <li>Collaborated with UX designers to implement pixel-perfect designs</li>
+                                <li>Ensured cross-browser compatibility and responsive design</li>
+                                <li>Created websites using React,Redux ToolKit,Node.js,Express,MongoDB</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section" role="region" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's work together!</h3>
+                        <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to collaborate or just say hello!</p>
+
+                        <address class="contact-details" aria-label="Contact information">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:moloyswe20@gmail.com">moloyswe20@gmail.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:+8801724599014">+8801724599014</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p> Sylhet , Bangladesh</p>
+                                </div>
+                            </div>
+                        </address>
+
+                        <div class="social-links" role="list" aria-label="Social media profiles">
+                            <a href="#" class="social-link" role="listitem" aria-label="Connect on LinkedIn">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/ItsMoloy/" class="social-link" role="listitem" aria-label="View GitHub profile">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="social-link" role="listitem" aria-label="Follow on Twitter">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="social-link" role="listitem" aria-label="Follow on Instagram">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form id="contactForm" novalidate aria-labelledby="contact-form-heading">
+                            <h3 id="contact-form-heading" class="sr-only">Contact Form</h3>
+
+                            <div class="form-group">
+                                <label for="name" class="sr-only">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required aria-describedby="nameError" autocomplete="name">
+                                <span class="error-message" id="nameError" role="alert" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your Email" required aria-describedby="emailError" autocomplete="email">
+                                <span class="error-message" id="emailError" role="alert" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="sr-only">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required aria-describedby="subjectError">
+                                <span class="error-message" id="subjectError" role="alert" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="sr-only">Your Message</label>
+                                <textarea id="message" name="message" placeholder="Your Message" rows="6" required aria-describedby="messageError"></textarea>
+                                <span class="error-message" id="messageError" role="alert" aria-live="polite"></span>
+                            </div>
+
+                            <button type="submit" class="submit-btn" aria-describedby="submit-description">
+                                <span class="btn-text mailto:moloyswe20@gmail.com">Send Message</span>
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                            <span id="submit-description" class="sr-only">Submit the contact form to send your message</span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Moloy Banerjee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
